@@ -1,0 +1,1016 @@
+* {
+    margin: 0 !important;
+    padding: 0;
+    /* overflow-x: hidden; */
+    box-sizing: border-box;
+    /* border: 1px solid red !important; */
+
+    /* waller to start trading */
+
+
+}
+.fs-6{
+    font-size: 15.5px !important;
+}
+body {
+    font-family: 'Roboto', 'Helvetica', 'Helvetica Neue', sans-serif;
+}
+
+.toflex {
+    display: flex;
+}
+
+h2.navbar-toggler-icon {
+    background-color: gray !important;
+}
+
+.no-border-btn {
+    border: none !important;
+    outline: none;
+    /* this will remove the focus outline, which might look like a border to some */
+    height: 50px !important;
+    background-color: white !important;
+}
+
+.margitopmenu {
+
+    margin-left: 10px !important;
+
+    /* margin-top: 9px !important; */
+}
+
+.no-border-btn:focus {
+    border: none !important;
+    outline: none !important;
+}
+
+.no-border-btn:focus {
+    outline: none;
+    background-color: white !important;
+    /* light gray background when focused */
+}
+
+.navbar {
+    background-color: white !important;
+    border-bottom: 1px solid #EAEEF1;
+    width: 100% !important;
+    position: sticky;
+    top: 0;
+
+    height: 73px !important;
+
+    z-index: 1000000000;
+    /* min-height: auto; */
+
+
+}
+
+.colorp {
+    color: #939394 !important;
+}
+
+
+
+.bg-white {
+    outline: 0.1px solid lightblue;
+}
+
+.icon2inner {
+    margin-left: 20px !important;
+}
+
+.crossicon {
+    height: 20px !important;
+    width: 20px !important;
+
+    color: white;
+    background-color: red;
+
+    padding: 3.5px !important;
+    padding-left: 4.2px !important;
+
+
+}
+
+#sidebar,
+#parentsidebar,
+#main {
+    transition: width 0.9s ease;
+}
+
+.sidebar {
+    background-color: white !important;
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.5);
+    position: fixed;
+
+
+    width: 16.6%;
+    top: 5;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
+
+
+}
+
+.wallet {
+    min-height: 200px;
+
+
+    width: 370px;
+    background: linear-gradient(to bottom right, #CD9E7A, #9E795D, #7E6049);
+    position: relative;
+    border-radius: 17px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transition: transform 0.7s ease, box-shadow 0.3s ease; 
+    position: relative !important;
+
+}
+
+.fa-info{
+    font-size: 20px !important;
+    padding-top: 1.6px !important;
+}
+.wallet:hover{
+    transform: scale(1.01); 
+
+}
+
+li {
+    list-style: none;
+}
+
+.margintopp {
+    margin-bottom: 1.5rem !important;
+
+
+
+}
+
+i{
+color: #B2BEC3 ;
+}
+
+
+.fa-chevron-down{
+    font-size: small !important;
+}
+
+.selected {
+    border: none !important;
+    outline: none !important;
+    border-bottom: 5px solid blue !important;
+}
+
+
+.form-control2 {
+    background-color: white !important;
+    color: black !important;
+    /* border: none !important; */
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.mar{
+    margin-left: 10px !important;
+}
+
+.mar1{
+    margin-left: 20px !important;
+}
+.form-control2:focus {
+    /* border: none !important; */
+    box-shadow: none !important;
+    outline: none !important;
+}
+.img {
+    /* position: absolute; */
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzM2IiBoZWlnaHQ9IjEwOCIgdmlld0JveD0iMCAwIDMzNiAxMDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zNC4xMzU3IDAuNzc4MDc2TC01Ny41OTc3IDAuNzc4MDc2VjUuMTc4MzFDLTQ3LjAxNzQgNS42NDE0OSAtNDMuNjQwNyA3LjE0NjgzIC00My42NDA3IDE4LjQ5NDhMLTQzLjY0MDcgOTUuMDM1NkMtNDMuNjQwNyAxMDYuODQ3IC00Ny4wMTc0IDEwNy44ODkgLTU3LjU5NzcgMTA4LjM1MkwtNTcuNTk3NyAxMTIuMjg5TC02LjE1OTQ2IDExMi4yODlMLTYuMTU5NDYgMTA4LjQ2OEMtMTkuMTAzNCAxMDguMDA1IC0yMi4wMjk5IDEwNi40OTkgLTIyLjAyOTkgOTUuMTUxNEwtMjIuMDI5OSA1OC41NjAxSC0zLjM0NTU1QzEwLjYxMTQgNTguNTYwMSAxNy4yNTIyIDYyLjAzMzkgMTkuNzI4NSA3NC44ODcySDI0LjAwNTZMMjQuMDA1NiAzNS40MDA5SDE5LjcyODVDMTcuODE1IDQ3LjIxMjEgMTMuOTg4MSA1MC4yMjI4IC0zLjM0NTU1IDUwLjIyMjhILTIyLjAyOTlMLTIyLjAyOTkgMTQuNTU3N0MtMjIuMDI5OSAxMC4xNTc1IC0yMS4wMTY5IDkuMTE1MzUgLTE1LjgzOTMgOS4xMTUzNUwwLjQ4MTM1OCA5LjExNTM1QzIyLjA5MjIgOS4xMTUzNSAyNS45MTkxIDEzLjA1MjQgMjkuNzQ2IDI1LjQ0MjVIMzQuMDIzMVYwLjc3ODA3NkwzNC4xMzU3IDAuNzc4MDc2WiIgZmlsbD0iYmxhY2siIGZpbGwtb3BhY2l0eT0iMC4wNiIvPgo8cGF0aCBkPSJNMTIwLjU4NiAxMDAuMjQ4TDk0LjUzOTUgNjYuNTU3N0wxMDguNjcxIDUwLjk4OTdDMTE4LjA5MyA0MS4xMzgxIDEyMy40OTYgMzUuOTA4MiAxMzEuNjcgMzUuNDIxN1YzMC43OTk5TDk1LjA5MzcgMzAuNzk5OVYzNS40MjE3QzEwMS42MDUgMzUuNDIxNyAxMDQuNTE1IDM3LjAwMjggMTA0LjUxNSA0MC42NTE2QzEwNC41MTUgNDMuODEzOCAxMDAuMzU5IDQ3Ljk0OTEgOTYuODk0OCA1MC45ODk3TDg4LjU4MiA1OS4yNjAyTDc5LjE2MDcgNDYuODU0NUM3Ni44MDU0IDQ0LjMwMDMgNzUuMDA0MyA0Mi4yMzI3IDc1LjAwNDMgMzkuNTU2OUM3NS4wMDQzIDM3LjAwMjggNzguNjA2NiAzNS40MjE3IDg0LjQyNTYgMzUuNDIxN1YzMC43OTk5TDM1LjM3OTcgMzAuNzk5OVYzNS40MjE3QzQyLjQ0NTcgMzcuMDAyOCA0NS40OTM3IDQwLjY1MTYgNDguOTU3NCA0NS4yNzMzTDczLjIwMzIgNzYuNDA5NEw1My4xMTM4IDk3LjIwNzNDNDYuMDQ3OSAxMDQuNTA1IDQyLjQ0NTcgMTA3LjA1OSAzNC4xMzI4IDEwOC4xNTRWMTEyLjI4OUg3MC4xNTUyVjEwOC4wMzJDNjUuNDQ0NSAxMDguMDMyIDYwLjA0MTIgMTA2LjkzNyA2MC4wNDEyIDEwNC4zODNDNjAuMDQxMiAxMDEuODI5IDYzLjY0MzQgOTguMTgwMyA2OS40NjI0IDkxLjk3NzRMNzcuNzc1MyA4My4wOTg4TDg3Ljg4OTIgOTYuMTEyN0M5MS40OTE1IDEwMC43MzQgOTMuMTU0IDEwMi44MDIgOTMuMTU0IDEwNC4zODNDOTMuMTU0IDEwNi40NTEgODkuNTUxOCAxMDcuNTQ1IDgzLjA0MDEgMTA3LjU0NVYxMTEuNjgxSDEzMy4zMzNWMTA3LjU0NUMxMjkuNDUzIDEwOC41MTggMTI1Ljg1MSAxMDcuNTQ1IDEyMC41ODYgMTAwLjI0OFoiIGZpbGw9ImJsYWNrIiBmaWxsLW9wYWNpdHk9IjAuMDYiLz4KPHBhdGggZD0iTTE4OS44NTIgMC43Nzc5NTRMMTMzLjMzNCAwLjc3Nzk1NFY1LjE3ODE4QzE0NS40NTQgNS42NDEzNyAxNDguNjY5IDcuMTQ2NzEgMTQ4LjY2OSAxOC40OTQ3Vjk1LjAzNTVDMTQ4LjY2OSAxMDYuODQ3IDE0NS40NTQgMTA3Ljg4OSAxMzMuMzM0IDEwOC4zNTJWMTEyLjI4OUwxODguNzM5IDExMi4yODlMMTg4LjczOSAxMDguNDY4QzE3Ni4xMjQgMTA4LjAwNSAxNzIuOTA5IDEwNi40OTkgMTcyLjkwOSA5NS4xNTEzVjY1Ljk3MDhMMTg4LjczOSA2NS45NzA4QzIxOS4yODYgNjUuOTcwOCAyMzUuNzM0IDU0LjYyMjkgMjM1LjczNCAzMy4zMTY1QzIzNS4yMzkgMTUuMTM2NiAyMjIuNTAxIDAuNzc3OTU0IDE4OS44NTIgMC43Nzc5NTRaTTE3Mi40MTQgNTkuNjAyMVYxMy42MzEzQzE3Mi40MTQgOS42OTQyMSAxNzQuMDIyIDcuMjYyNSAxODIuNDMyIDcuMjYyNUMxOTguMjYyIDcuMjYyNSAyMTAuMzgxIDE1LjcxNTYgMjEwLjM4MSAzMS4wMDA2QzIxMC4zODEgNDguNzE3MyAyMDAuMzY0IDU5LjYwMjEgMTcyLjQxNCA1OS42MDIxWiIgZmlsbD0iYmxhY2siIGZpbGwtb3BhY2l0eT0iMC4wNiIvPgo8cGF0aCBkPSJNMjg3Ljg5OCAzMC43OTk5QzI3OS41NyAzMC43OTk5IDI3NC4zMjYgMzguNDU4MiAyNzEuNjUzIDQ1LjYzNzhIMjcxLjI0MlYzMy4zMTI4QzI3MS4yNDIgMzEuNzU3MiAyNzEuMjQyIDMwLjc5OTkgMjcwLjMxNiAzMC43OTk5QzI2OC45OCAzMC43OTk5IDI1Mi43MzUgMzUuOTQ1MyAyNDUuMzMyIDM3LjM4MTNWNDEuOTI4NEMyNTEuOTEyIDQxLjkyODQgMjUzLjY2IDQzLjQ4NCAyNTMuNjYgNTIuMDk5NVY5OC41Mjc4QzI1My42NiAxMDUuNzA3IDI1MC45ODcgMTA3LjI2MyAyNDUuMzMyIDEwOC4yMlYxMTIuMjg5SDI4MS43MjlWMTA4LjM0QzI3NS4xNDkgMTA4LjM0IDI3MS4yNDIgMTA2LjMwNiAyNzEuMjQyIDk3LjU3MDZWNTIuNjk3OEMyNzMuNDAxIDQ4LjYyOTQgMjc2LjA3NCA0Ni4xMTY1IDI3OC43NDcgNDYuMTE2NUMyODAuNDk1IDQ2LjExNjUgMjgxLjgzMiA0Ny4xOTM0IDI4Mi42NTQgNDcuNjcyMUMyODMuOTkxIDQ4Ljc0OSAyODUuNzM5IDUxLjI2MTkgMjg5LjY0NiA1MS4yNjE5QzI5NC4wNjcgNTEuMjYxOSAyOTcuNTYyIDQ3LjE5MzQgMjk3LjU2MiA0Mi4wNDhDMjk3Ljk3NCAzNi45MDI2IDI5NC44ODkgMzAuNzk5OSAyODcuODk4IDMwLjc5OTlaIiBmaWxsPSJibGFjayIgZmlsbC1vcGFjaXR5PSIwLjA2Ii8+CjxwYXRoIGQ9Ik0zMzguMTMyIDMwLjc5OTlDMzE0LjExMiAzMC43OTk5IDI5Ny41OTkgNDcuOTQ5NCAyOTcuNTk5IDcxLjU0NDRDMjk3LjU5OSA5NS4xMzkzIDMxNC4xMTIgMTEyLjI4OSAzMzguMTMyIDExMi4yODlDMzYyLjE1MiAxMTIuMjg5IDM3OC42NjUgOTUuMTM5MyAzNzguNjY1IDcxLjU0NDRDMzc4LjY2NSA0Ny45NDk0IDM2Mi4xNTIgMzAuNzk5OSAzMzguMTMyIDMwLjc5OTlaTTMzOC4xMzIgMTA1LjM4M0MzMjUuMzcxIDEwNS4zODMgMzIwLjQ5MiA5NS4wMjQyIDMyMC40OTIgNzEuNTQ0NEMzMjAuNDkyIDQ3Ljk0OTQgMzI1Ljg3MiAzNy43MDU4IDMzOC4xMzIgMzcuNzA1OEMzNTAuODkyIDM3LjcwNTggMzU1Ljc3MSA0OC4wNjQ1IDM1NS43NzEgNzEuNTQ0NEMzNTYuMjcyIDk1LjEzOTMgMzUwLjg5MiAxMDUuMzgzIDMzOC4xMzIgMTA1LjM4M1oiIGZpbGw9ImJsYWNrIiBmaWxsLW9wYWNpdHk9IjAuMDYiLz4KPC9zdmc+Cg==');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+/* width: 98% !important; */
+    overflow: hidden !important;
+    height:118px;
+
+    position: static ;
+}
+
+.zoom-out {
+    transform: scale(0.8) !important; /* zoom out to 90% */
+}
+
+
+
+
+/* .btn-group {
+    display: flex; 
+    justify-content: space-between; 
+} */
+
+.btn1,
+.btn2,
+.btn3 {
+    width: 30%;
+    /* margin-left: 25px; */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 24px;
+    background-color: white;
+    color: black;
+}
+
+.btn1 i,
+.btn2 i,
+.btn3 i {
+
+    color: blue;
+}
+
+.btn1 i:hover,
+.btn2 i:hover,
+.btn3 i:hover {
+
+    color: white;
+}
+
+.btn1:hover i,
+.btn2:hover i,
+.btn3:hover i {
+
+    color: white;
+}
+
+
+/* .dropdown-menu {
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    display: block; 
+}
+
+.dropdown.show .dropdown-menu {
+    transform: scaleY(1);
+    opacity: 1;
+} */
+
+.hello {
+    /* overflow-y: auto; */
+    height: 120vh;
+
+}
+
+.upanddownborder {
+    border-right: 0px !important;
+    border-left: 0px !important;
+    margin-bottom: 20px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+
+}
+
+#dropdowntwo {
+    display: none;
+}
+
+.toright {
+    margin-left: auto !important;
+}
+
+.trans {
+    margin-left: auto !important;
+}
+
+.dropdowncont {
+    display: none;
+}
+
+.sidebar ul li {
+    margin-top: 15px !important;
+}
+
+.ptag {
+    color: #939394;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 5px;
+}
+
+
+
+.margintopwallet {
+    margin-top: 1.2rem !important;
+}
+
+
+
+
+
+.marginleft {
+
+    margin-left: -25px !important;
+    width: 10px !important;
+    /* border-radius: 10px !important; */
+}
+
+.btn-circle {
+    width: 25px !important;
+    /* Or whatever size you want */
+    height: 25px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky !important;
+}
+
+h2 {}
+
+.forcedhide {
+    display: none;
+}
+
+.forcedmargin {
+    margin-left: 0% !important;
+}
+
+.fa-times {
+    padding-top: 2px;
+    margin-right: 10px !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.navbar-brand img {
+    height: 27px;
+    margin-left: 10px !important;
+}
+
+.addclasssidebar {
+    display: block !important;
+
+}
+
+.hidesidebarclass {
+    display: none !important;
+}
+
+@media (max-width:992px) {
+
+    .sidebar {
+        z-index: 1000000000000000 !important;
+        width: 55% !important;
+        top: 0;
+
+
+        display: none !important;
+    }
+
+    .parentsidebar {
+        display: none !important;
+
+    }
+
+    .addclasssidebar {
+        display: block !important;
+
+    }
+
+    .hidesidebarclass {
+        display: none !important;
+    }
+
+
+
+.border{
+    border: 1px solid #EAEEF1 !important;
+}
+    .navbar {
+        background-color: white !important;
+        border-bottom: 1px solid #EAEEF1;
+
+        position: static;
+        top: 0;
+        z-index: 0;
+
+
+    }
+
+
+
+}
+
+
+.btn11 {
+    margin-left: -2px !important;
+    width: 100% !important;
+
+    background-color: transparent !important;
+    outline: 0 !important;
+    border: 0 !important;
+    margin-top: -10px !important;
+
+}
+
+.btn22 {
+
+
+
+    background-color: transparent !important;
+    outline: 0 !important;
+    border: 0 !important;
+    width: 100% !important;
+    margin-top: -10px !important;
+
+}
+
+.btnparent {
+    height: 50px !important;
+    width: 15%;
+}
+
+button {
+    /* margin-left: 10px !important; */
+}
+
+.btn11:hover {
+
+    background-color: transparent !important;
+    outline: 0 !important;
+    border: 0 !important;
+
+}
+
+.btn22:hover {
+    background-color: transparent !important;
+    outline: 0 !important;
+    border: 0 !important;
+
+}
+
+.btn33 {
+    background-color: transparent !important;
+    outline: 0 !important;
+    border: 0 !important;
+}
+
+.custom-dropdown-left {
+    right: 100% !important;
+    left: auto !important;
+    top: 10 !important;
+    width: 250px !important;
+}
+
+.custom-dropdown-left li a {
+    color: #939394;
+    padding-top: 20px;
+
+}
+
+
+
+
+
+/* Custom styles for the datepicker */
+/* .datepicker {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    font-family: 'Arial', sans-serif;
+} */
+
+
+i {
+    font-size: 22px !important;
+}
+
+.datepicker table {
+    width: 100%;
+}
+
+.datepicker thead tr:first-child th {
+    border-radius: 8px 8px 0 0;
+}
+
+.datepicker thead tr:last-child th {
+    border-radius: 0 0 8px 8px;
+}
+
+.datepicker th,
+.datepicker td {
+    padding: 8px;
+    border-radius: 4px;
+}
+
+
+
+
+.datepicker td.active,
+.datepicker td.active:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.datepicker td.day:hover {
+    background-color: #f5f5f5;
+}
+
+.datepicker th.next,
+.datepicker th.prev {
+    font-size: 1.5em;
+}
+
+
+/* General styles for buttons */
+.accountsbtn,
+.Toolsbtn {
+    position: relative;
+    /* Important for positioning the arrow */
+    width: 200px;
+    padding-right: 200px !important;
+}
+
+/* Styles specific for accountsbtn */
+.accountsbtn.dropdown-toggle1::after {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    /* this will vertically center the arrow */
+    transform: translateY(-50%);
+}
+
+/* Styles specific for Toolsbtn */
+.Toolsbtn.dropdown-toggle2::after {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    /* this will vertically center the arrow */
+    transform: translateY(-50%);
+}
+
+.navbar-nav li {
+    margin-left: 20px !important;
+
+}
+
+.margintoppp {
+    margin-top: 13px !important;
+}
+
+#toggledropdown3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    /* d-flex justify-content-between align-items-end */
+
+}
+
+
+.sidebar ul li {
+    padding-top: 20px !important;
+}
+
+
+.tobold {
+    color: #939394 !important;
+}
+.margintopwallet{
+    color: #CDBCAF !important;
+    font-weight: 800;
+}
+@media (max-width:992px) {
+    .navbar-brand {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .hh{
+        width: 20% !important;
+    }
+
+
+    .paymentmargin:hover {
+        background-color: orange;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 100% !important;
+        transition: all 0.6s ease;
+    
+        .towhite {
+            color: white !important;
+    
+    
+        }
+    }
+
+
+    .nav-item.dropdown {
+        position: relative !important;
+    }
+
+    .nav-item.dropdown .dropdown-menu {
+        top: 100%;
+        left: 0;
+        position: absolute !important;
+    }
+
+    .tocenter {
+        text-align: center;
+    }
+
+    .walletcard {
+        margin-left: 1rem !important;
+        margin-top: 1rem !important;
+    }
+
+    .mainrow {
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .tobold {
+        font-weight: bold;
+        color: #939394 !important;
+    }
+
+    #toggledropdown3 {
+
+        display: none;
+
+
+
+
+    }
+
+
+
+    .btn1,
+    .btn2,
+    .btn3 {
+        width: 90%;
+        margin-top: 20px !important;
+        margin-left: 25px !important;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 30px;
+        background-color: white;
+        color: black;
+    }
+
+    .buttonsgroup {
+        flex-direction: column !important;
+
+    }
+
+
+
+
+    .main1,
+    .navbar1 {
+
+        filter: brightness(50%);
+        background-color: gray !important;
+        height: 100% !important;
+
+
+    }
+
+    .alert {
+        width: 95%;
+        margin-left: 20px !important;
+        border-radius: 16px !important;
+        margin-top: 10px !important;
+
+    }
+
+    .marginless {
+
+        margin-left: -26px !important;
+        margin-bottom: 10px !important;
+        margin-top: -10px !important;
+
+    }
+
+    .paymentmargin {
+        padding-top: 10px !important;
+        padding-left: 30px !important;
+        padding-bottom: 10px ;
+
+
+
+    }
+
+
+    .icon2inner {
+        margin-left: 10px !important;
+    }
+
+
+    .onmdscreen {
+        display: none !important;
+    }
+
+
+    .marginlefttmenu {
+        margin-left: 20px !important;
+    }
+
+    .menu {
+
+        margin-top: 0px !important;
+
+    }
+}
+
+
+.paymentmargin:hover {
+    background-color: orange;
+    cursor: pointer;
+    border-radius: 5px !important;
+    /* width: 100% !important; */
+
+    transition: all 0.6s ease;
+
+    .towhite {
+        color: white !important;
+
+
+    }
+}
+
+body.darkmode {
+    color: white;
+
+
+
+    background-color: #2d3436 !important;
+
+
+    .navbar {
+        background-color: #2d3436 !important;
+
+        border-color: #424a4d !important;
+
+    }
+
+    .sidebar {
+        background-color: #2D3436 !important;
+    }
+
+    .alert {
+        background-color: #2D3436 !important;
+        border-color: rgb(44, 50, 53);
+    }
+
+    #main {
+        background-color: #23282A !important;
+
+    }
+
+    .inner {
+        background-color: #23282A !important;
+
+        border-color: #424a4d !important;
+
+    }
+
+    .btn1,
+    .btn2,
+    .btn3 {
+        border: 1px solid blue !important;
+        background-color: #23282A !important;
+        color: white;
+    }
+
+    .upanddownborder {
+        background-color: #2D3436 !important;
+    }
+
+    .fff {
+        background-color: #23282A;
+    }
+
+    .tocenter {
+        color: white !important;
+    }
+
+    .btnparent {
+        background-color: #2D3436 !important;
+    }
+
+    body span {
+        color: white !important;
+    }
+
+    li {
+        color: white !important;
+
+    }
+
+
+    .s {
+        color: #939394 !important;
+    }
+
+
+
+}
+
+.colorp{
+    font-size: 14px ;
+    margin-top: 10px !important;
+}
+
+
+.colorp1{
+    margin-top: 10px !important;
+}
+body.darkmode span,
+body.darkmode a,
+body.darkmode label,
+body .darkmode li {
+    color: #939394;
+
+
+
+}
+
+body.darkmode .margintopwallet {
+    color: #D0BEB1 !important;
+
+}
+
+body.darkmode .parent {
+    background: color #2d3436 !important;
+    ;
+
+}
+
+body.darkmode .btn-circle {
+    background-color: #2d3436 !important;
+    border-color: #23282A !important;
+    outline-color: black !important;
+
+}
+
+body.darkmode input::placeholder,
+body.darkmode textarea::placeholder {
+    color: #939394 !important;
+    opacity: 1;
+    /* Ensures the color is not faded */
+}
+
+body.darkmode h3 {
+    color: white !important;
+}
+
+
+body.darkmode .btn1:hover,
+body.darkmode .btn2:hover,
+body.darkmode .btn3:hover {
+    background-color: blue !important;
+    color: white !important;
+
+
+}
+
+body.darkmode .btn1:hover .d,
+body.darkmode .btn2:hover .d,
+body.darkmode .btn3:hover .d {
+    color: white !important;
+}
+
+
+body.darkmode input{
+    color: white !important;
+}
+
+body.darkmode .dateicon,
+body.darkmode .btn-light {
+    color: white !important;
+}
+
+body.darkmode .btnparent {
+    border: 1px solid white !important;
+}
+
+body.darkmode .no-border-btn {
+    background-color: #2d3436 !important;
+
+    color: white !important;
+}
+
+body.darkmode .dropdown-menu {
+    background-color: #2C3235 !important;
+}
+
+body.darkmode .dropdown-item:hover {
+    color: white !important;
+}
+
+.dropdown-item:hover {
+    background-color: transparent !important;
+    color: inherit !important;
+}
+
+
+i:hover {
+
+    color: #D63031 !important;
+
+}
+
+body.darkmode li:hover {
+    background-color: #41494C !important;
+    border-radius: 12px !important;
+}
+
+li:hover {
+    background-color: #F2F3F4 !important;
+    border-radius: 12px !important;
+    margin: 0 !important;
+
+}
+
+button {
+    border: none !important;
+}
+
+li:hover i {
+    color: red;
+}
+
+body.darkmode .datepicker {
+    background-color: #23282A; 
+}
+
+body.darkmode .datepicker table {
+    width: 100%;
+    color: #b3b3b3;
+}
+
+body.darkmode .datepicker thead tr:first-child th {
+    /* border-radius: 8px 8px 0 0; */
+    background-color: #2D3436;
+}
+
+body.darkmode .datepicker thead tr:last-child th {
+    /* border-radius: 0 0 8px 8px; */
+    background-color: #2D3436;
+}
+
+body.darkmode .datepicker th,
+body.darkmode .datepicker td {
+    /* padding: 8px;
+    border-radius: 4px; */
+    background-color: #1a1e20; 
+}
+
+body.darkmode .datepicker td.active,
+body.darkmode .datepicker td.active:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+body.darkmode .datepicker td.day:hover {
+    background-color: #333; 
+}
+
+body.darkmode .datepicker th.next,
+body.darkmode .datepicker th.prev {
+    font-size: 1.5em;
+    color: #d1d1d1; 
+}
+
+
+body.darkmode .upanddownborder{
+    border:1px solid #424a4d !important;
+}
+
+
+
+@media (max-width:340px)
+{
+    .decrease{
+        font-size:60% !important;
+    }
+    .navbar-brand img{
+        height: 22px ;
+    }
+    
+    i{
+        font-size: 16px !important;
+    }
+}
+
+.navbar-nav{
+    margin-top: 10px !important;
+}
+
+
+.sp{
+    margin-top: -20px !important;
+}

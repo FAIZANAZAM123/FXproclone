@@ -1,0 +1,903 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+  <!-- Bootstrap Datepicker CSS -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+  <!-- Bootstrap Datepicker JS -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="">
+
+  <nav id="navbar2" class="navbar  navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand " href="#"><img class="img-fluid" src="	https://direct.fxpro.uk/assets/images/fxpro-logo.svg" alt=""></a>
+      <button onclick="show()" class=" navbar-toggler no-border-btn order-first" type="button">
+         <div class="d-flex">
+
+          <i  class="fas fa fa-bars"></i>
+
+          <div class="margitopmenu">Menu</div>
+        </div>
+
+      </button>
+
+
+
+
+      <!-- navbarSupportedContent -->
+
+      <div class="" id="">
+        <ul class="navbar-nav flex-row  ms-auto mb-2 mb-lg-0">
+          <li class="nav-item  d-lg-block d-none">
+            <a class="nav-link active" aria-current="page" href="#">
+
+              <i class="fas me-3 fa-headset"></i>
+
+              <span class="me-2 a">Support</span>
+
+            </a>
+          </li>
+          <li class="nav-item d-lg-block d-none">
+            <a class="nav-link" href="#">
+
+              <i class="fas me-2 fa-lightbulb">
+
+              </i>
+
+              <span class="me-2 a">Hints</span>
+
+
+            </a>
+          </li>
+
+
+          <li class="nav-item dropdown specialdropdown  d-lg-block d-none">
+            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-cog me-2"></i>
+            </a>
+            <ul class="dropdown-menu custom-dropdown-left">
+              <li onclick="switchtodark()"><a class="dropdown-item" href="#" id="togglea" >Switch to dark Theme</a></li>
+              <li><a class="a dropdown-item" href="#">Password Setting</a></li>
+              <li><a class="a dropdown-item" href="#">Language Setting</a></li>
+              <li><a class="a dropdown-item" href="#">Email Setting</a></li>
+              <li><a class="a dropdown-item" href="#">Authentication Setting</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown d-lg-none ">
+            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-bell me-2"></i>
+            </a>
+
+          </li>
+
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-user me-2"></i>
+            </a>
+            <ul class="dropdown-menu custom-dropdown-left">
+              <li><a class="dropdown-item " href="#">Personal Detail</a></li>
+              <li><a class="dropdown-item " href="#">Contact Detail</a></li>
+              <li><a class="dropdown-item" href="#">Upload Documents </a></li>
+              <li><a class="dropdown-item" href="#">Become a Partner</a></li>
+              <li><a class="dropdown-item" href="#">Legal Documentation</a></li>
+              <li><a class="dropdown-item" href="#">Close Account</a></li>
+              <hr>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+
+
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <div class="row h-100">
+    <div class="row g-0">
+
+      <div id="parentsidebar" class="col-md-2 parent col-lg-2 col-2  col-sm-2">
+
+
+        <div id="sidebar" class=" toflex  d-lg-block collapse sidebar p-3 flex-column bg-light responsive-sidebar">
+          <li onclick="hidesidebar()" class="marginlefttmenu d-flex d-lg-none">
+            <a href="#" class="nav-link link-dark" data-bs-toggle="collapse" data-bs-target="#sidebarMenu">
+              <i style="font-size: 30px;" class="fas fa-times me-2"></i>
+            </a>
+            <span class="menu">Menu</span>
+          </li>
+
+          <ul class="nav flex-column  mb-auto">
+
+
+
+            <li>
+              <a href="#" class="nav-link link-dark">
+                <i class="fas fa-tachometer-alt me-2"></i>
+                <span>Quick Access</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link link-dark">
+                <i class="fas fa-wallet me-2"></i>
+                <span>Wallet</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link link-dark">
+                <i class="fas fa-users me-2"></i>
+                <span>Accounts</span>
+              </a>
+            </li>
+
+            
+            <li>
+
+
+
+
+              <button class="btn accountsbtn btn-white dropdown-toggle1 dropdown-toggle" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-controls="collapseExample"
+                aria-expanded="false">
+                <i class="fas fa-tools"></i> 
+                <span>Tools</span>
+              </button>
+
+
+              <div class="collapse" id="collapseExample">
+                <div class=" card-body">
+                  <ul class="">
+                    <li>Dashboard</li>
+                    <li>Economic Calendar</li>
+                    <li>Calculator</li>
+                  </ul>
+                </div>
+              </div>
+
+            </li>
+
+
+
+            
+            <li>
+
+
+
+
+              <button class="btn Toolsbtn btn-white  dropdown-toggle2 dropdown-toggle" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-controls="collapseExample"
+                aria-expanded="false">
+                <!-- <i class="fas fa-info"></i> -->
+
+                  <i style="background-color: orange; height: 26px ; width: 25px;  color: white ;" class="fas rounded-circle  fa-info "></i>
+               <span style="font-size: 4px;" class="fs-6"> Analytics & Education</span>
+              </button>
+
+
+              <div class="collapse" id="collapseExample1">
+                <div class=" card-body">
+                  <ul class="">
+                    <li>Dashboard</li>
+                    <li>Economic Calendar</li>
+                    <li>Calculator</li>
+                  </ul>
+                </div>
+              </div>
+
+            </li>
+
+
+            
+
+
+            <li class="d-lg-none">
+
+
+
+
+              <button class="btn Toolsbtn btn-white  dropdown-toggle2 dropdown-toggle" type="button"
+                data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-controls="collapseExample"
+                aria-expanded="false">
+                <i class="fas fa-tools"></i><span> Setting</span>
+              </button>
+
+
+              <div class="collapse" id="collapseExample2">
+                <div class=" card-body">
+                  <ul class="">
+                    <li onclick="switchtodark()"><a class="dropdown-item" href="#" id="togglea" >Switch to dark Theme</a></li>
+                    <li><a class="a dropdown-item" href="#">Password Setting</a></li>
+                    <li><a class="a dropdown-item" href="#">Language Setting</a></li>
+                    <li><a class="a dropdown-item" href="#">Email Setting</a></li>
+                    <li><a class="a dropdown-item" href="#">Authentication Setting</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </li>
+
+
+
+
+
+
+
+            <hr class=" mt-3 m-0 ">
+            <li class=" px-3 me-3 d-lg-block d-none">
+
+              <div class="border sp   rounded-2 ">
+
+                <p class="pe-3 ps-3 pt-2 ptag text-center ">Scan to download FxPro Trading App</p>
+
+                <img class="img-fluid ms-2" style="height: 126px; width:90%"
+                  src="data:image/png;base64,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"
+                  alt="">
+              </div>
+            </li>
+
+
+
+            <li class="nav-item  d-lg-none ">
+              <a class="nav-link active" aria-current="page" href="#">
+  
+                <i class="fas me-3 fa-headset"></i>
+  
+                <span class="me-2 a">Support</span>
+  
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div id="main" class="col-md-12  col-lg-10 col-sm-12 col-12 hello ">
+        <!-- Thisis the warrning -->
+
+        <div id="alert" class="row g-0 rounded-0 alert alert-warning">
+          <div class="col-lg-3 col-md-11 col-11 marginless d-flex align-items-center">
+
+            <button onclick="makewidthless()"
+              class=" d-none d-lg-flex bg-white btn-circle rounded-circle btn marginleft">
+              <i id="icon5" style="color: #939394; font-size: 20px; font-weight: 600;" class="fas fa-angle-left"></i>
+            </button>
+            <div class="ms-3 d-flex align-items-center">
+              <i style="color: orange;" class="fas fa-exclamation-triangle me-2"></i>
+              <p style="color: orange;" class="mb-0">To start trading, please</p>
+            </div>
+          </div>
+
+          <div class="col-lg-7 col-md-11 col-sm-11 col-11 d-flex align-items-center flex-column flex-md-row">
+            <div class="text-center paymentmargin col-lg-4 col-md-11  ">
+              <p style="color: orange;" class="mb-0 towhite">Make your First Payment <i style="color: orange;" class=" towhite fas ms-2 fa-arrow-right"></i>
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="row mt-5 g-0 inner mt-3 border-1 border  rounded-4 mx-3">
+
+          <div class="col-md-12">
+            <div class="row g-0 mainrow mt-2 p-4">
+              <div class="col-md-6 wallet ">
+
+                <div class="d-flex justify-content-between px-3">
+                  <h3 style="color: white;" class="p-3 "><img src="https://direct.fxpro.uk/assets/images/cabinet/wallet/fxpro.svg" alt=""></h3>
+
+                  <div>
+                    <p class="margintopwallet mx-3">virtual wallet</p>
+                    <p class="decrease" style="color: white; font-weight: bold; ">W02603151EUR</p>
+                  </div>
+
+
+                </div>
+
+
+
+                <div class="d-flex margintoppp  align-items-end img">
+                  <p style="color: #0000008a;" class=" fw-bolder ms-4 margintopp">Helda Gojnag</p>
+                </div>
+
+
+
+                <!-- <img class="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzM2IiBoZWlnaHQ9IjEwOCIgdmlld0JveD0iMCAwIDMzNiAxMDgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0zNC4xMzU3IDAuNzc4MDc2TC01Ny41OTc3IDAuNzc4MDc2VjUuMTc4MzFDLTQ3LjAxNzQgNS42NDE0OSAtNDMuNjQwNyA3LjE0NjgzIC00My42NDA3IDE4LjQ5NDhMLTQzLjY0MDcgOTUuMDM1NkMtNDMuNjQwNyAxMDYuODQ3IC00Ny4wMTc0IDEwNy44ODkgLTU3LjU5NzcgMTA4LjM1MkwtNTcuNTk3NyAxMTIuMjg5TC02LjE1OTQ2IDExMi4yODlMLTYuMTU5NDYgMTA4LjQ2OEMtMTkuMTAzNCAxMDguMDA1IC0yMi4wMjk5IDEwNi40OTkgLTIyLjAyOTkgOTUuMTUxNEwtMjIuMDI5OSA1OC41NjAxSC0zLjM0NTU1QzEwLjYxMTQgNTguNTYwMSAxNy4yNTIyIDYyLjAzMzkgMTkuNzI4NSA3NC44ODcySDI0LjAwNTZMMjQuMDA1NiAzNS40MDA5SDE5LjcyODVDMTcuODE1IDQ3LjIxMjEgMTMuOTg4MSA1MC4yMjI4IC0zLjM0NTU1IDUwLjIyMjhILTIyLjAyOTlMLTIyLjAyOTkgMTQuNTU3N0MtMjIuMDI5OSAxMC4xNTc1IC0yMS4wMTY5IDkuMTE1MzUgLTE1LjgzOTMgOS4xMTUzNUwwLjQ4MTM1OCA5LjExNTM1QzIyLjA5MjIgOS4xMTUzNSAyNS45MTkxIDEzLjA1MjQgMjkuNzQ2IDI1LjQ0MjVIMzQuMDIzMVYwLjc3ODA3NkwzNC4xMzU3IDAuNzc4MDc2WiIgZmlsbD0iYmxhY2siIGZpbGwtb3BhY2l0eT0iMC4wNiIvPgo8cGF0aCBkPSJNMTIwLjU4NiAxMDAuMjQ4TDk0LjUzOTUgNjYuNTU3N0wxMDguNjcxIDUwLjk4OTdDMTE4LjA5MyA0MS4xMzgxIDEyMy40OTYgMzUuOTA4MiAxMzEuNjcgMzUuNDIxN1YzMC43OTk5TDk1LjA5MzcgMzAuNzk5OVYzNS40MjE3QzEwMS42MDUgMzUuNDIxNyAxMDQuNTE1IDM3LjAwMjggMTA0LjUxNSA0MC42NTE2QzEwNC41MTUgNDMuODEzOCAxMDAuMzU5IDQ3Ljk0OTEgOTYuODk0OCA1MC45ODk3TDg4LjU4MiA1OS4yNjAyTDc5LjE2MDcgNDYuODU0NUM3Ni44MDU0IDQ0LjMwMDMgNzUuMDA0MyA0Mi4yMzI3IDc1LjAwNDMgMzkuNTU2OUM3NS4wMDQzIDM3LjAwMjggNzguNjA2NiAzNS40MjE3IDg0LjQyNTYgMzUuNDIxN1YzMC43OTk5TDM1LjM3OTcgMzAuNzk5OVYzNS40MjE3QzQyLjQ0NTcgMzcuMDAyOCA0NS40OTM3IDQwLjY1MTYgNDguOTU3NCA0NS4yNzMzTDczLjIwMzIgNzYuNDA5NEw1My4xMTM4IDk3LjIwNzNDNDYuMDQ3OSAxMDQuNTA1IDQyLjQ0NTcgMTA3LjA1OSAzNC4xMzI4IDEwOC4xNTRWMTEyLjI4OUg3MC4xNTUyVjEwOC4wMzJDNjUuNDQ0NSAxMDguMDMyIDYwLjA0MTIgMTA2LjkzNyA2MC4wNDEyIDEwNC4zODNDNjAuMDQxMiAxMDEuODI5IDYzLjY0MzQgOTguMTgwMyA2OS40NjI0IDkxLjk3NzRMNzcuNzc1MyA4My4wOTg4TDg3Ljg4OTIgOTYuMTEyN0M5MS40OTE1IDEwMC43MzQgOTMuMTU0IDEwMi44MDIgOTMuMTU0IDEwNC4zODNDOTMuMTU0IDEwNi40NTEgODkuNTUxOCAxMDcuNTQ1IDgzLjA0MDEgMTA3LjU0NVYxMTEuNjgxSDEzMy4zMzNWMTA3LjU0NUMxMjkuNDUzIDEwOC41MTggMTI1Ljg1MSAxMDcuNTQ1IDEyMC41ODYgMTAwLjI0OFoiIGZpbGw9ImJsYWNrIiBmaWxsLW9wYWNpdHk9IjAuMDYiLz4KPHBhdGggZD0iTTE4OS44NTIgMC43Nzc5NTRMMTMzLjMzNCAwLjc3Nzk1NFY1LjE3ODE4QzE0NS40NTQgNS42NDEzNyAxNDguNjY5IDcuMTQ2NzEgMTQ4LjY2OSAxOC40OTQ3Vjk1LjAzNTVDMTQ4LjY2OSAxMDYuODQ3IDE0NS40NTQgMTA3Ljg4OSAxMzMuMzM0IDEwOC4zNTJWMTEyLjI4OUwxODguNzM5IDExMi4yODlMMTg4LjczOSAxMDguNDY4QzE3Ni4xMjQgMTA4LjAwNSAxNzIuOTA5IDEwNi40OTkgMTcyLjkwOSA5NS4xNTEzVjY1Ljk3MDhMMTg4LjczOSA2NS45NzA4QzIxOS4yODYgNjUuOTcwOCAyMzUuNzM0IDU0LjYyMjkgMjM1LjczNCAzMy4zMTY1QzIzNS4yMzkgMTUuMTM2NiAyMjIuNTAxIDAuNzc3OTU0IDE4OS44NTIgMC43Nzc5NTRaTTE3Mi40MTQgNTkuNjAyMVYxMy42MzEzQzE3Mi40MTQgOS42OTQyMSAxNzQuMDIyIDcuMjYyNSAxODIuNDMyIDcuMjYyNUMxOTguMjYyIDcuMjYyNSAyMTAuMzgxIDE1LjcxNTYgMjEwLjM4MSAzMS4wMDA2QzIxMC4zODEgNDguNzE3MyAyMDAuMzY0IDU5LjYwMjEgMTcyLjQxNCA1OS42MDIxWiIgZmlsbD0iYmxhY2siIGZpbGwtb3BhY2l0eT0iMC4wNiIvPgo8cGF0aCBkPSJNMjg3Ljg5OCAzMC43OTk5QzI3OS41NyAzMC43OTk5IDI3NC4zMjYgMzguNDU4MiAyNzEuNjUzIDQ1LjYzNzhIMjcxLjI0MlYzMy4zMTI4QzI3MS4yNDIgMzEuNzU3MiAyNzEuMjQyIDMwLjc5OTkgMjcwLjMxNiAzMC43OTk5QzI2OC45OCAzMC43OTk5IDI1Mi43MzUgMzUuOTQ1MyAyNDUuMzMyIDM3LjM4MTNWNDEuOTI4NEMyNTEuOTEyIDQxLjkyODQgMjUzLjY2IDQzLjQ4NCAyNTMuNjYgNTIuMDk5NVY5OC41Mjc4QzI1My42NiAxMDUuNzA3IDI1MC45ODcgMTA3LjI2MyAyNDUuMzMyIDEwOC4yMlYxMTIuMjg5SDI4MS43MjlWMTA4LjM0QzI3NS4xNDkgMTA4LjM0IDI3MS4yNDIgMTA2LjMwNiAyNzEuMjQyIDk3LjU3MDZWNTIuNjk3OEMyNzMuNDAxIDQ4LjYyOTQgMjc2LjA3NCA0Ni4xMTY1IDI3OC43NDcgNDYuMTE2NUMyODAuNDk1IDQ2LjExNjUgMjgxLjgzMiA0Ny4xOTM0IDI4Mi42NTQgNDcuNjcyMUMyODMuOTkxIDQ4Ljc0OSAyODUuNzM5IDUxLjI2MTkgMjg5LjY0NiA1MS4yNjE5QzI5NC4wNjcgNTEuMjYxOSAyOTcuNTYyIDQ3LjE5MzQgMjk3LjU2MiA0Mi4wNDhDMjk3Ljk3NCAzNi45MDI2IDI5NC44ODkgMzAuNzk5OSAyODcuODk4IDMwLjc5OTlaIiBmaWxsPSJibGFjayIgZmlsbC1vcGFjaXR5PSIwLjA2Ii8+CjxwYXRoIGQ9Ik0zMzguMTMyIDMwLjc5OTlDMzE0LjExMiAzMC43OTk5IDI5Ny41OTkgNDcuOTQ5NCAyOTcuNTk5IDcxLjU0NDRDMjk3LjU5OSA5NS4xMzkzIDMxNC4xMTIgMTEyLjI4OSAzMzguMTMyIDExMi4yODlDMzYyLjE1MiAxMTIuMjg5IDM3OC42NjUgOTUuMTM5MyAzNzguNjY1IDcxLjU0NDRDMzc4LjY2NSA0Ny45NDk0IDM2Mi4xNTIgMzAuNzk5OSAzMzguMTMyIDMwLjc5OTlaTTMzOC4xMzIgMTA1LjM4M0MzMjUuMzcxIDEwNS4zODMgMzIwLjQ5MiA5NS4wMjQyIDMyMC40OTIgNzEuNTQ0NEMzMjAuNDkyIDQ3Ljk0OTQgMzI1Ljg3MiAzNy43MDU4IDMzOC4xMzIgMzcuNzA1OEMzNTAuODkyIDM3LjcwNTggMzU1Ljc3MSA0OC4wNjQ1IDM1NS43NzEgNzEuNTQ0NEMzNTYuMjcyIDk1LjEzOTMgMzUwLjg5MiAxMDUuMzgzIDMzOC4xMzIgMTA1LjM4M1oiIGZpbGw9ImJsYWNrIiBmaWxsLW9wYWNpdHk9IjAuMDYiLz4KPC9zdmc+Cg==" alt=""> -->
+
+              </div>
+              <div class="col-lg-6 col-md-9 col-9 col-sm-9 walletcard  ms-5">
+                <p class="tocenter tobold">Your Wallet</p>
+                <h2 style="color: #2D3436;" class="tocenter ">0.00 EUR <i id="icon3" onclick="toggledetails()"
+                    class="fas text-primary d-lg-none fa-angle-down"></i> </h2>
+
+
+
+
+
+
+                <div id="toggledropdown3" style="height: 70%; ;" class="">
+
+
+                  <p> Virtual WalletNumber
+                  </p>
+
+                  <p style="word-wrap: break-word;">312223Eur</p>
+
+                </div>
+
+              </div>
+
+
+
+
+            </div>
+            <hr class="d-lg-none mt-4 ">
+
+
+
+            <div class="d-flex buttonsgroup justify-content-around mb-3 mt-4">
+              <div class="btn btn1 btn-primary ">
+                <i class="fas d  fa-wallet"></i> Funds
+              </div>
+              <div class="btn btn2 btn-primary">
+                <i class="fas d fa-exchange-alt"></i> Transfer
+              </div>
+              <div class="btn btn3 btn-primary">
+                <i class="fas d fa-hand-holding-usd"></i> Withdrawal
+              </div>
+            </div>
+
+
+
+          </div>
+
+
+
+
+        </div>
+
+
+        <div class=" border border inner rounded-2  border-1 mx-3 mt-5">
+          <div onclick="togglerdropdown()" class="">
+
+            <div class="text-center">
+              <button class="btn btn-lg border-0 d-flex justify-content-center align-items-center" style="width: 100%;">
+
+                <h3 class="trans">Transaction History</h3>
+                <i id="icon1" class="fas fa-angle-down toright" style="margin-left: auto; color:blue"></i>
+
+              </button>
+
+
+            </div>
+
+
+
+          </div>
+          <!-- Dropdown container -->
+          <div id="dropdownone" class="dropdown  mt-4 dropdowncont ">
+            <!-- Dropdown button -->
+
+
+            <!-- Dropdown menu -->
+            <div class="row p-3  d-lg-flex  d-none justify-content-between ">
+
+              <!-- Date Dropdown -->
+              <!-- <div class="col-md-4 ">
+                <select class="form-control">
+                  <option>Select Date</option>
+                  <option>Today</option>
+                  <option>This Week</option>
+                  <option>This Month</option>
+                  <option>This Year</option>
+                </select>
+              </div> -->
+
+              <div class="col-md-4">
+                <div class="input-group h-100">
+                  <input type="text" class="form-control fff datepicker" placeholder="Select Date">
+                  <span class="input-group-text fff "><i class=" dateicon fas fa-calendar-alt"></i></span>
+                </div>
+              </div>
+
+
+
+
+              <!-- Type Dropdown -->
+              <div class="col-md-2 btnparent bg-light">
+                <label class="" style="font-size: 11px;" for="text">Type</label>
+                <br>
+                <div class="btn-group btn11">
+                  <button type="button " class="btn btn33 s btn p-0 btn-light">Action</button>
+                  <button type="button " class="btn btn22 btn-light dropdown-toggle dropdown-toggle-split"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
+                </div>
+
+                <!-- <input type="text " readonly class="form-control mb-2" placeholder="Type"> -->
+
+
+              </div>
+
+
+
+              <!-- Method Dropdown -->
+              <div class="col-md-2  btnparent bg-light">
+                <label class="" style="font-size: 11px;" for="text">Method</label>
+                <br>
+                <div class="btn-group btn11">
+                  <button type="button " class="btn btn33 btn p-0 btn-light">Action</button>
+                  <button type="button " class="btn btn22 btn-light dropdown-toggle dropdown-toggle-split"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
+                </div>
+
+                <!-- <input type="text " readonly class="form-control mb-2" placeholder="Type"> -->
+
+
+              </div>
+
+              <!-- Status Dropdown -->
+              <div class="col-md-2 btnparent bg-light">
+                <label class="" style="font-size: 11px;" for="text">Status</label>
+                <br>
+                <div class="btn-group btn11">
+                  <button type="button " class="btn btn33 btn p-0 btn-light">Action</button>
+
+
+                  <button type="button " class="btn btn22 btn-light dropdown-toggle dropdown-toggle-split"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                  </button>
+
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                  </ul>
+                </div>
+
+                <!-- <input type="text " readonly class="form-control mb-2" placeholder="Type"> -->
+
+
+              </div>
+
+              <!-- Apply Button -->
+              <div class="col-md-2">
+                <button class="btn col-md-12 btn-primary h-100">Apply</button>
+              </div>
+
+            </div>
+
+
+            <div onclick="togglerdropdown2()"
+              class="upanddownborder border pt-3 p-4 mx-3 pb-3 g-0 mt-3 data-bs-toggle=" collapse"
+              href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <div class="row g-0">
+                <div class="col-lg-3  col-sm-5  col-5  col-md-4 d-flex  align-items-center">
+                  <i id="icon2" style="color: #939394;" class="fas fa-2x fa-angle-right"></i>
+                  <span class="icon2inner text-center">10/20/2023 22:03</span>
+                </div>
+                <div class="col-lg-3 d-lg-flex d-none align-items-center justify-content-center">
+                  Fund
+                </div>
+                <div class="col-lg-3  d-lg-flex d-none  align-items-center justify-content-center">
+                  Card/Debit Card
+                </div>
+                <div class="col-lg-2 col-md-4  col-sm-5  col-5   d-flex align-items-center justify-content-center">
+
+                  <span class="crossicon bg-danger rounded-circle fas fa-times  "></span> <span
+                    class="d-lg-block d-none">Cancelled</span>
+
+
+
+                </div>
+                <div class="col-lg-1 col-md-3  col-sm-2  col-2 d-flex  align-items-center justify-content-center">
+                  -EUR
+                </div>
+              </div>
+
+              <div id="dropdownthree" class="row g-0 forcedhide d-lg-none">
+
+                <div class="d-flex mt-4 justify-content-between">
+
+                  <div class="colorp">Type</div>
+                  <div  class="colorp1" >Fund</div>
+
+                </div>
+                <div class="d-flex  mt-2 justify-content-between">
+
+                  <div class="colorp">Method</div>
+                  <div class="colorp1" >Card/DebitCard</div>
+
+                </div>
+                <div class="d-flex mt-2 justify-content-between">
+
+                  <div class="colorp">From</div>
+                  <div class="colorp1" >1779</div>
+
+                </div>
+                <div class="d-flex mt-2 justify-content-between">
+
+                  <div class="colorp">Amount</div>
+                  <div class="colorp1" >100.00EUR</div>
+
+                </div>
+                <div class="d-flex mt-2 justify-content-between">
+
+                  <div class="colorp">To</div>
+                  <div class="colorp1" >99979732</div>
+
+                </div>
+                <div class="d-flex mt-2 justify-content-between">
+
+                  <div class="colorp">Fee</div>
+                  <div class="colorp1" >99979732</div>
+
+                </div>
+                <div class="d-flex mt-2 justify-content-between">
+
+                  <div class="colorp">Convertion rate</div>
+                  <div class="colorp1" >99979732</div>
+
+                </div>
+
+                <div class="d-flex mt-2 justify-content-between">
+
+                  <div class="colorp">Final Amount rate</div>
+                  <div class="colorp1" >-Eur</div>
+
+                </div>
+
+
+
+              </div>
+
+
+
+              <div id="dropdowntwo" class="row onmdscreen mt-4">
+                <div class="col-md-1 d-flex align-items-center">
+                  From
+                </div>
+                <div class="col-md-2 d-flex flex-column align-items-end">
+                  <p>Amount</p>
+                  100.00 EUR
+                </div>
+                <div class="col-md-3 d-flex flex-column align-items-center">
+                  <p>To</p>
+                  W02603151EUR
+                </div>
+                <div class="col-md-2 d-flex flex-column align-items-center">
+                  <p>Fee</p>
+                  0.00
+                </div>
+                <div class="col-md-2 d-flex flex-column align-items-center">
+                  <p>Conversion rate</p>
+                  -
+                </div>
+                <div class="col-md-2 d-flex flex-column align-items-end">
+                  <p>Final amount</p>
+                  -Eur
+                </div>
+              </div>
+            </div>
+
+
+
+            
+            <div class="container mt-5">
+              <div class="row align-items-center">
+                  <!-- Cloud icon and Export text -->
+                  <div class="col-md-3 col-sm-12 d-flex align-items-center justify-content-md-start justify-content-center white-icons">
+                      <i class="fa fa-cloud me-2"></i>
+                      <span>Export</span>
+                  </div>
+          
+                  <!-- Items per page text with dropdown -->
+                  <div class="col-md-9 col-sm-12 d-flex align-items-center justify-content-md-start justify-content-center flex-wrap white-icons">
+                      <span class="me-2 mt-2">Items per page:</span>
+                      
+                      <div class="position-relative mt-2 hh" style="width:10%;">
+                        <select  class="form-control rounded-0 form-control2">
+                            <option>1</option>
+                            <option>5</option>
+                            <option>10</option>
+                            <option>15</option>
+                        </select>
+                        <i class="fas fa-chevron-down  position-absolute" style="right: 10px; top: 50%; transform: translateY(-50%); pointer-events: none;"></i>
+                    </div>
+                      <div class="d-flex align-items-center justify-content-md-start justify-content-center mt-2 ms-md-3">
+                          <span class="mar">1-1 of 1</span>
+                          <button class="btn mar1 btn-sm "><i class="fas fa-step-backward"></i></button>
+                          <button class="btn mar1 btn-sm "><i class="fas fa-chevron-left "></i></button>
+                          <button class="btn mar1 btn-sm"><i class="fas fa-chevron-right"></i></button>
+                          <button class="btn mar1 btn-sm "><i class="fas fa-step-forward"></i></button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+  </div>
+
+
+  </div>
+
+  </div>
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+
+  <script>
+
+    function togglerdropdown() {
+      const toggler = document.getElementById('dropdownone');
+      const icon = document.getElementById('icon1');
+
+      if (toggler.style.display === 'none' || toggler.style.display === '') {
+        toggler.style.display = 'block';
+
+        icon.classList.remove('fa-angle-down');
+        icon.classList.add('fa-angle-up')
+
+      }
+      else {
+        toggler.style.display = 'none';
+        icon.classList.add('fa-angle-down');
+        icon.classList.remove('fa-angle-up')
+
+      }
+    }
+
+
+
+
+
+    function togglerdropdown2() {
+      const toggler = document.getElementById('dropdowntwo');
+      const toggler1 = document.getElementById('dropdownthree');
+      toggler1.style.display = 'flex';
+
+
+      const icon = document.getElementById('icon2');
+
+      if (toggler.style.display === 'none' || toggler.style.display === '') {
+        toggler.style.display = 'flex';
+
+
+        icon.classList.add('fa-angle-down');
+        icon.classList.remove('fa-angle-right')
+      }
+
+
+
+      else {
+        toggler.style.display = 'none';
+
+        toggler1.style.display = 'none';
+
+        icon.classList.remove('fa-angle-down');
+        icon.classList.add('fa-angle-right')
+      }
+    }
+
+
+
+
+
+    function makewidthless() {
+      const toggler = document.getElementById('sidebar');
+      const toggler1 = document.getElementById('parentsidebar');
+      const toggler3 = document.getElementById('main');
+      // Note: You've defined toggler4 twice in your code. 
+      // Make sure you correct that in case you intend to use it further.
+      const toggler4 = document.getElementById('alert');
+
+      const toggler5 = document.getElementById('icon5');
+
+
+      if (toggler.style.width === '16.6%' || toggler.style.width === '') {
+        toggler.style.width = '0.2%';
+        toggler.style.overflowY = 'hidden';
+        toggler.style.overflowX = 'hidden';
+
+
+        toggler1.style.width = '0.2%';
+        toggler3.style.width = '99.8%';
+        toggler3.style.zIndex = '10000';
+        toggler3.style.paddingLeft = '2%';
+        toggler4.classList.add('forcedmargin');
+        toggler4.style.width = '100%';
+        toggler5.classList.add('fa-angle-right');
+        toggler5.classList.remove('fa-angle-left');
+
+
+
+      } else {
+        toggler.style.width = '16.6%';
+        toggler1.style.width = '16.6%';
+        toggler3.style.paddingLeft = '0%';
+        toggler4.style.paddingLeft = '1%';
+        toggler4.classList.remove('forcedmargin');
+        toggler4.style.width = '100%';
+
+        toggler3.style.width = '83.4%';
+        toggler.style.overflowY = 'auto';
+
+        toggler5.classList.remove('fa-angle-right');
+        toggler5.classList.add('fa-angle-left');
+
+      }
+    }
+
+
+
+    $(document).ready(function () {
+      $('.datepicker').datepicker({
+        format: 'mm/dd/yyyy',
+        autoclose: true,
+        todayHighlight: true
+      });
+
+      $(".input-group-text.datepicker").click(function () {
+        $(this).prev('.form-control.datepicker').focus();
+      });
+    });
+
+
+
+    function toggledetails() {
+      const toggler = document.getElementById('toggledropdown3');
+      const toggler2 = document.getElementById('icon3');
+      if (toggler.style.display === 'flex') {
+        toggler.style.display = 'none'
+        toggler2.classList.add('fa-angle-down')
+
+        toggler2.classList.remove('fa-angle-up')
+
+
+
+      }
+      else {
+        toggler.style.display = 'flex'
+
+        toggler2.classList.add('fa-angle-up')
+        toggler2.classList.remove('fa-angle-down')
+
+
+
+      }
+
+
+    }
+
+
+    function hidesidebar() {
+
+      const toggler = document.getElementById('sidebar');
+toggler.classList.add('hidesidebarclass');
+toggler.classList.remove('addclasssidebar');
+const addclass=document.getElementById('main');
+      const addclass1=document.getElementById('navbar2');
+
+
+      addclass.classList.remove('main1');
+      addclass1.classList.remove('navbar1');
+
+
+    };
+    function show() {
+
+      const toggler = document.getElementById('sidebar');
+      const addclass=document.getElementById('main');
+      const addclass1=document.getElementById('navbar2');
+
+
+      addclass.classList.add('main1');
+      addclass1.classList.add('navbar1');
+
+      toggler.classList.add('addclasssidebar');
+      toggler.classList.remove('hidesidebarclass');
+
+
+      const blr=document.getElementById('main');
+    };
+
+
+
+
+
+
+
+  function switchtodark() {
+    const button = document.getElementById('togglea');
+    
+    if (document.body.classList.contains('darkmode')) {
+        document.body.classList.remove('darkmode');
+        button.textContent = "Switch to Dark";
+    } else {
+        document.body.classList.add('darkmode');
+        button.textContent = "Switch to Light Theme";
+    }
+}
+
+document.querySelector(".form-control2").addEventListener("change", function() {
+    if(this.value) {
+        this.classList.add("selected");
+    } else {
+        this.classList.remove("selected");
+    }
+});
+
+
+
+  </script>
+</body>
+
+</html>
